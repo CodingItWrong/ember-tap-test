@@ -1,0 +1,21 @@
+{{#if this.flag}}
+  <button type="button" class="btn btn-light">
+    D
+  </button>
+  <button type="button" class="btn btn-light">
+    E
+  </button>
+  <button type="button" class="btn btn-light">
+    F
+  </button>
+{{else}}
+  <button type="button" {{on "click" this.setFlag}} class="btn btn-light">
+    A
+  </button>
+  <button type="button" {{on "click" this.setFlag}} class="btn btn-light">
+    B
+  </button>
+  <button type="button" {{on "click" this.setFlag}} class="btn btn-light">
+    C
+  </button>
+{{/if}}
